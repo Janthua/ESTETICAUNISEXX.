@@ -104,12 +104,19 @@
   </div>
   
  <!-- Aquí se agrega el QR -->
-  <iframe
-    src="https://janthua.github.io/ESTETICAUNISEXX./"
-    frameborder="0"
-    scrolling="no"
-    style="overflow:hidden; width:200px; height:200px; margin: 0 auto 40px;"
-  ></iframe>
+  <div id="qr" style="margin: 20px auto;"></div>
+
+  <script src="https://janthua.github.io/ESTETICAUNISEXX./"></script>
+  <script>
+    new QRCode(document.getElementById("qr"), {
+      text: "https://tu-dominio.com/pagina",
+      width: 200,
+      height: 200,
+      colorDark: "#cc3366",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
 
 </body>
 </html>
